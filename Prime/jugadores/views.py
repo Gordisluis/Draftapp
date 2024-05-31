@@ -1,9 +1,6 @@
 from django.shortcuts import render
 
 # Create your views here.
-
-
-
 def buscar_equipo_insensible(jugador, jugadores_futbol):
     """
     Busca el equipo en el que juega un jugador de fútbol sin distinguir entre mayúsculas y minúsculas.
