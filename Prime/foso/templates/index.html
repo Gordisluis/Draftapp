@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +11,9 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <!-- CUSTOM CSS -->
-  <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  
 </head>
 
 <body>
@@ -23,7 +26,8 @@
     <!-- Navigation -->
     <nav class="nav-main">
       <!-- Brand -->
-      <img src="img/pes.jpg" alt="TechNews Logo" class="nav-brand">
+      <img src="{% static 'img/logo.jpg' %}" alt="TechNews Logo" class="nav-brand">
+     
       <!-- Left Nav -->
       <ul class="nav-menu">
         <li>
@@ -42,7 +46,7 @@
           <a href="https://www.google.com/search?q=serie+a&rlz=1C1ONGR_esCL1000CL1000&oq=serie+a&gs_lcrp=EgZjaHJvbWUqDQgAEAAY4wIYsQMYgAQyDQgAEAAY4wIYsQMYgAQyCggBEC4YsQMYgAQyDQgCEC4YgwEYsQMYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgxMjUxajBqOagCALACAA&sourceid=chrome&ie=UTF-8#sie=lg;/g/11kbz3nwd5;2;/m/03zv9;tbbs;hd;;;;2024-05-17T18:45:00Z&wptab=si:ACC90nxf9KAEpHgHfAikz_8O8Y5Hh0ixj21IrePIxqwFME2hPrAtHgxFMhMJd22o6cAVUtabSJThEHz0rv3ESLFKsWwBr3PZ-cSRiPA0i7-U14Y_dZStrEMfNO1hwf1f5hSaJ_ztHxyB8JHu9wwfad4gw9TE-c01BWxKRqVSA48v2NZR3icCTC0%3D" target="_blank">Serie A</a>
         </li>
         <li>
-          <a href="#">Mundial</a>
+          <a href="mundial">Mundial</a>
         </li>
         <li>
           <a href="https://www.google.com/search?q=copoa+america&sca_esv=361416631b2a74db&sca_upv=1&rlz=1C1ONGR_esCL1000CL1000&sxsrf=ADLYWII4cAknIxZX65G3RnrONEUj53cBbw%3A1717163398855&ei=htVZZvr0M7_-5OUPoZWQ4A4&ved=0ahUKEwj6z6OThLiGAxU_P7kGHaEKBOwQ4dUDCBA&uact=5&oq=copoa+america&gs_lp=Egxnd3Mtd2l6LXNlcnAiDWNvcG9hIGFtZXJpY2EyEBAAGIAEGLEDGEMYgwEYigUyEBAuGIAEGLEDGEMYgwEYigUyEBAuGIAEGLEDGEMYgwEYigUyEBAAGIAEGLEDGEMYgwEYigUyEBAAGIAEGLEDGEMYgwEYigUyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyDRAAGIAEGLEDGIMBGAoyChAAGIAEGLEDGAoyEBAAGIAEGLEDGEMYgwEYigVI5RtQAFjyGXACeAGQAQCYAVqgAcQIqgECMTW4AQPIAQD4AQGYAhGgAu4JwgIKECMYgAQYJxiKBcICChAuGIAEGEMYigXCAgQQIxgnwgIQEC4YgAQY0QMYQxjHARiKBcICCxAAGIAEGLEDGIMBwgIFEAAYgATCAgoQLhiABBjUAhgKwgIFEC4YgATCAh8QLhiABBjRAxhDGMcBGIoFGJcFGNwEGN4EGOAE2AEBwgINEC4YgAQYsQMYgwEYCsICBxAAGIAEGArCAgcQLhiABBgKwgIZEC4YgAQYQxiKBRiXBRjcBBjeBBjfBNgBAcICChAuGIAEGLEDGArCAg0QLhiABBixAxiDARgNwgINEAAYgAQYsQMYgwEYDcICChAAGIAEGLEDGA3CAgcQABiABBgNwgIcEC4YgAQYsQMYgwEYDRiXBRjcBBjeBBjgBNgBAZgDALoGBggBEAEYFJIHAjE3oAeG3QE&sclient=gws-wiz-serp#sie=lg;/m/0xn9y9g;2;/m/01l5y1;tbbs;hd;;;;2024-06-21T00:00:00Z&wptab=si:ACC90nw9vMMdwL91whQ4n-NcljM143f3JvZl4TM_hvFSavH6DxhM68nwhpUpFrgEtIyxVqexrdwH9mpql3VkflsXToKZQqrOlYIn4h7RlVP5cPwyOy53NaTHpp6fCzaGadckLrViUC8x6FICvrevU_bcxlHhDQjrv-N_pwITRe9DSlFyDKFfCyo%3D" target="_blank">Copa America</a>
@@ -77,7 +81,7 @@
     <!-- NEWS CARDS -->
     <div class="news-cards">
       <div>
-        <img src="img/balon1.jpg" alt="" />
+        <img src="{% static 'img/balon1.jpg' %}" alt="" />
         <h3>Lorem, ipsum dolor.</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
           doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
@@ -85,7 +89,7 @@
         <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
       </div>
       <div>
-        <img src="img/balon2.jpg" alt="" />
+        <img src="{% static 'img/balon2.jpg' %}" alt="" />
         <h3>Lorem, ipsum dolor.</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
           doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
@@ -93,7 +97,7 @@
         <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
       </div>
       <div>
-        <img src="img/balon3.jpg" alt="" />
+        <img src="{% static 'img/balon3.jpg' %}" alt="" />
         <h3>Lorem, ipsum dolor.</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
           doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
@@ -101,7 +105,7 @@
         <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
       </div>
       <div>
-        <img src="img/balon4.jpg" alt="" />
+        <img src="{% static 'img/balon4.jpg' %}" alt="" />
         <h3>Lorem, ipsum dolor.</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
           doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
@@ -124,7 +128,7 @@
     <!-- NEWS CARDS -->
     <div class="news-cards">
       <div>
-        <img src="img/balon1.jpg" alt="" />
+        <img src="{% static 'img/balon1.jpg' %}" alt="" />
         <h3>Lorem, ipsum dolor.</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
           doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
@@ -132,7 +136,7 @@
         <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
       </div>
       <div>
-        <img src="img/balon2.jpg" alt="" />
+        <img src="{% static 'img/balon2.jpg' %}" alt="" />
         <h3>Lorem, ipsum dolor.</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
           doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
@@ -140,7 +144,7 @@
         <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
       </div>
       <div>
-        <img src="img/balon3.jpg" alt="" />
+        <img src="{% static 'img/balon3.jpg' %}" alt="" />
         <h3>Lorem, ipsum dolor.</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
           doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
@@ -148,7 +152,7 @@
         <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
       </div>
       <div>
-        <img src="img/balon4.jpg" alt="" />
+        <img src="{% static 'img/balon4.jpg' %} " alt="" />
         <h3>Lorem, ipsum dolor.</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
           doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
@@ -299,7 +303,7 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <a href="https://github.com/Gordisluis" target="_blank" >dedicated to Gordisluis</a>
+    <a href="#" target="_blank" >dedicated to Gordisluis</a>
     
   </footer>
 
