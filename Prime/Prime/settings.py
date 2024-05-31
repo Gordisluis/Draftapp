@@ -123,6 +123,8 @@ STATIC_URL = 'static/'# settings.p
 
 STATICFILES_DIRS = [
     BASE_DIR / "static",
+    BASE_DIR / "static/css",
+    
     "/",
 ]
 
