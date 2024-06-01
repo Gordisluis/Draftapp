@@ -1,70 +1,41 @@
 from django.shortcuts import render
 
-# Create your views here.
-def buscar_equipo_insensible(jugador, jugadores_futbol):
-    """
-    Busca el equipo en el que juega un jugador de fútbol sin distinguir entre mayúsculas y minúsculas.
+# Definimos una lista de jugadores con su nombre, nacionalidad y equipo
+jugadores = [
+    {"nombre": "Lionel Messi", "nacionalidad": "Argentina", "equipo": "Paris Saint-Germain"},
+    {"nombre": "Cristiano Ronaldo", "nacionalidad": "Portugal", "equipo": "Manchester United"},
+    {"nombre": "Neymar Jr", "nacionalidad": "Brasil", "equipo": "Paris Saint-Germain"},
+    {"nombre": "Kylian Mbappé", "nacionalidad": "Francia", "equipo": "Paris Saint-Germain"}
+]
 
-    Args:
-    jugador (str): El nombre del jugador.
-    jugadores_futbol (dict): Diccionario que mapea jugadores a sus equipos.
-
-    Returns:
-    str or None: El nombre del equipo si se encuentra el jugador, None si no se encuentra.
-    """
-    jugador = jugador.lower()  # Convertir el nombre del jugador a minúsculas
-    for nombre, equipo in jugadores_futbol.items():
-        if nombre.lower() == jugador:  # Convertir el nombre del diccionario a minúsculas para comparar
-            return equipo
+# Función para buscar un jugador por nombre
+def buscar_jugador(nombre):
+    nombre = nombre.lower()  # Convertimos el nombre ingresado a minúsculas
+    for jugador in jugadores:
+        if nombre in jugador["nombre"].lower():  # Comprobamos si el nombre está contenido en el nombre del jugador
+            return jugador
     return None
 
-# Diccionario ficticio de jugadores de fútbol y sus equipos
-jugadores_futbol = {
-    'Messi': 'Paris Saint-Germain',
-    'Ronaldo': 'Manchester United',
-    'Neymar': 'Paris Saint-Germain',
-    'Suarez': 'Atletico Madrid',
-    'Mbappé': 'Real Madrid',
-    'Lewandowski': 'Bayern Munich',
-    # Añade más jugadores y equipos según desees
-}
+# Función para validar la entrada del usuario
+def validar_entrada(texto):
+    entrada = input(texto)
+    while not entrada:
+        print("Por favor, ingresa un valor.")
+        entrada = input(texto)
+    return entrada
 
-def buscar_equipo_insensible(jugador, jugadores_futbol):
-    """
-    Busca el equipo en el que juega un jugador de fútbol sin distinguir entre mayúsculas y minúsculas.
+# Función principal
+def main():
+    nombre_jugador = validar_entrada("Ingresa el nombre del jugador de fútbol que deseas buscar: ")
 
-    Args:
-    jugador (str): El nombre del jugador.
-    jugadores_futbol (dict): Diccionario que mapea jugadores a sus equipos.
+    jugador_encontrado = buscar_jugador(nombre_jugador)
 
-    Returns:
-    str or None: El nombre del equipo si se encuentra el jugador, None si no se encuentra.
-    """
-    jugador = jugador.lower()  # Convertir el nombre del jugador a minúsculas
-    for nombre, equipo in jugadores_futbol.items():
-        if nombre.lower() == jugador:  # Convertir el nombre del diccionario a minúsculas para comparar
-            return equipo
-    return None
-
-# Diccionario ficticio de jugadores de fútbol y sus equipos
-jugadores_futbol = {
-    'Messi': 'Paris Saint-Germain',
-    'Ronaldo': 'Manchester United',
-    'Neymar': 'Paris Saint-Germain',
-    'Suarez': 'Atletico Madrid',
-    'Mbappé': 'Real Madrid',
-    'Lewandowski': 'Bayern Munich',
-    # Añade más jugadores y equipos según desees
-}
-
-while True:
-    jugador = input("Ingresa el nombre del jugador de fútbol (o 'salir' para terminar): ")
-    if jugador.lower() == 'salir':
-        print("Saliendo del programa...")
-        break
-    equipo = buscar_equipo_insensible(jugador, jugadores_futbol)
-    if equipo:
-        print(f"{jugador.capitalize()} juega en {equipo}.")
+    if jugador_encontrado:
+        print("Nombre:", jugador_encontrado["nombre"])
+        print("Nacionalidad:", jugador_encontrado["nacionalidad"])
+        print("Equipo:", jugador_encontrado["equipo"])
     else:
-        print(f"No se encontró información sobre {jugador.capitalize()}.")
+        print("El jugador no fue encontrado en la lista.")
 
+if __name__ == "__main__":
+    main()
