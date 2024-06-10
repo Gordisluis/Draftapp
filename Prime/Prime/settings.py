@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'foso.apps.FosoConfig',
+    'jugadores.apps.JugadoresConfig',
 ]
 
 MIDDLEWARE = [
@@ -80,8 +81,16 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    },
+    'players': {
+        'NAME': 'production_db',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.players',
+    },
+
 }
+
+
 
 
 # Password validation
