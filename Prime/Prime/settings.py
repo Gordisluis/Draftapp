@@ -41,24 +41,34 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'foso.apps.FosoConfig',
     'jugadores.apps.JugadoresConfig',
+    'compressor',
+    'django_browser_reload',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django_browser_reload.middleware.BrowserReloadMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    
 ]
 
 ROOT_URLCONF = 'Prime.urls'
 
+COMPRESS_ENABLED = True
+COMPRESS_ROOT = BASE_DIR / 'static'
+STATICFILES_FINDERS = ('compressor.finders.CompressorFinder',)
+
+
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

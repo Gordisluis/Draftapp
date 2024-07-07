@@ -20,5 +20,9 @@ pip install requirements.txt
 
 python manage.py runserver
 
+para tailwindcss
 
+1.1 solo debes de ejecutar en otra terminal nueva este comando para que compile todos los cambios relacionados a tailwindcss 
+
+npx tailwindcss -i ./static/src/input.css -o ./static/src/output.css --watch --minify
 

@@ -1,4 +1,6 @@
+{% load compress %}
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +15,9 @@
   <!-- CUSTOM CSS -->
 
   <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  {% compress css %}
+        <link rel="stylesheet" href="{% static 'src/output.css' %}">
+  {% endcompress %}
   
 </head>
 
@@ -79,7 +84,7 @@
     </header>
 
     <!-- NEWS CARDS -->
-    <div class="news-cards">
+    <div class="news-cards bg-gray-700 p-3 rounded-lg">
       <div>
         <!-- Indicamos a Django que la ruta de la imagen esta en static files -->
         <!-- {% static 'ruta_de_la_imagen' %} -->
@@ -92,7 +97,7 @@
       </div>
       <div>
         <img src="{% static 'img/balon2.jpg' %}" alt="" />
-        <h3>Lorem, ipsum dolor.</h3>
+        <h3 class="text-2xl text-black">Lorem, ipsum dolor.</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
           doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
         </p>
