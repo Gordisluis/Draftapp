@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <!-- CUSTOM CSS -->
 
-  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <!--<link rel="stylesheet" href="{% static 'css/styles.css' %}">-->
   {% compress css %}
         <link rel="stylesheet" href="{% static 'src/output.css' %}">
   {% endcompress %}
@@ -29,7 +29,7 @@
 
   <div class="container">
     <!-- Navigation -->
-    <nav class="nav-main bg-blue-600 border-none">
+    <nav class="nav-main">
       <!-- Brand -->
       <img src="{% static 'img/logo.jpg' %}" alt="TechNews Logo" class="nav-brand">
      
@@ -42,33 +42,24 @@
           <a href="https://www.google.com/search?q=europa+league&sca_esv=361416631b2a74db&sca_upv=1&rlz=1C1ONGR_esCL1000CL1000&sxsrf=ADLYWIJXBh4RilFVcVbygbnWltGbOAcopw%3A1717163194127&ei=utRZZsG0B8DZ5OUPnIuzuAE&gs_ssp=eJzj4tTP1TcwzCgqKTBg9OJNLS3KL0hUyElNTC9NBQBs8gil&oq=europa&gs_lp=Egxnd3Mtd2l6LXNlcnAiBmV1cm9wYSoCCAAyDRAuGIAEGLEDGEMYigUyEBAAGIAEGLEDGEMYgwEYigUyDRAuGIAEGLEDGEMYigUyChAAGIAEGEMYigUyChAAGIAEGEMYigUyDRAAGIAEGLEDGEMYigUyChAuGIAEGEMYigUyCBAAGIAEGLEDMgsQLhiABBixAxiDATIKEAAYgAQYQxiKBTIcEC4YgAQYsQMYQxiKBRiXBRjcBBjeBBjgBNgBAUjnE1AAWL0FcAB4AZABAJgBowGgAeEDqgEDNS4xuAEByAEA-AEBmAIGoAKwBMICChAjGIAEGCcYigXCAgoQLhiABBgnGIoFwgIQEC4YgAQY0QMYxwEYJxiKBcICEBAuGIAEGLEDGEMYgwEYigXCAgsQABiABBixAxiDAcICEBAuGIAEGNEDGEMYxwEYigXCAgoQABiABBgUGIcCwgIOEC4YgAQYsQMY0QMYxwGYAwC6BgYIARABGBSSBwM1LjGgB6J0&sclient=gws-wiz-serp#sie=lg;/g/11rmynfq_c;2;/m/01hrtp;tbbs;hd;;;;2024-03-14T17:45:00Z&wptab=si:ACC90nw9vMMdwL91whQ4n-NcljM143f3JvZl4TM_hvFSavH6DxhM68nwhpUpFrgEtIyxVqexrdwH9mpql3VkflsXToKZM38J12oEpKDR9TNh_zbyMUQUTHtlQw5-iGJRTYtZSqRxZWrJyc4E5q8lrOp_bAqzRcyYL6B3AEixx-boiXusFR8C1e0%3D" target="_blank">Europa League</a>
         </li>
         <li>
-          <a href="https://www.google.com/search?q=liga+espa%C3%B1ola&rlz=1C1ONGR_esCL1000CL1000&oq=liga+es&gs_lcrp=EgZjaHJvbWUqDQgAEAAY4wIYsQMYgAQyDQgAEAAY4wIYsQMYgAQyCggBEC4YsQMYgAQyCggCEAAYsQMYgAQyDAgDEAAYFBiHAhiABDINCAQQLhjUAhixAxiABDINCAUQLhjUAhixAxiABDINCAYQLhjUAhixAxiABDIGCAcQRRg5Mg0ICBAuGIMBGLEDGIAEMgcICRAAGIAEqAIAsAIA&sourceid=chrome&ie=UTF-8#sie=lg;/g/11khrmf0s3;2;/m/09gqx;tbbs;hd;;;;2024-05-18T19:00:00Z&wptab=si:ACC90nxf9KAEpHgHfAikz_8O8Y5Hh0ixj21IrePIxqwFME2hPrAtHgxFMhMJd22o6cAVUtabSJThEHz0rv3ESLFKsWwBAZ6za5He_HrirPkxr26dFscbFYu5FAA_AkAHn8lUDOdTAIeRgyojZX-CSJ358rlQXLIJsEaWygX4RF7cW65dZlHxiSc%3D" target="_blank">Liga Española</a>
+          <a href="https://www.google.com/search?q=liga+espa%C3%B1ola&rlz=1C1ONGR_esCL1000CL1000&oq=liga+es&gs_lcrp=EgZjaHJvbWUqDQgAEAAY4wIYsQMYgAQyDQgAEAAY4wIYsQMYgAQyCggBEC4YsQMYgAQyCggCEAAYsQMYgAQyDAgDEAAYFBiHAhiABDINCAQQLhjUAhixAxiABDINCAUQLhjUAhixAxiABDINCAYQLhjUAhixAxiABDIGCAcQRRg5Mg0ICBAuGIMBGLEDGIAEMgcICRAAGIAEqAIAsAIA&sourceid=chrome&ie=UTF-8#sie=lg;/g/11khrmf0s3;2;/m/09gqx;tbbs;hd;;;;2024-05-18T19:00:00Z&wptab=si:ACC90nxf9KAEpHgHfAikz_8O8Y5Hh0ixj21IrePIxqwFME2hPrAtHgxFMhMJd22o6cAVUtabSJThEHz0rv3ESLFKsWwBAZ6za5He_HrirPkxr26dFscbFYu5FAA_AkAHn8lUDOdTAIeRgyojZX-CSJ358rlQXLIJsEaWygX4RF7cW65dZlHxiSc%3D" target="_blank">Liga Draft</a>
         </li>
         <li>
-          <a href="https://www.google.com/search?gs_ssp=eJzj4tDP1Tcwii9JNmD0Yi8oSs3NTC0CADZBBew&q=premier&rlz=1C1ONGR_esCL1000CL1000&oq=premier&gs_lcrp=EgZjaHJvbWUqCggBEC4YsQMYgAQyBwgAEAAYjwIyCggBEC4YsQMYgAQyDQgCEAAYgwEYsQMYgAQyDAgDEAAYFBiHAhiABDIKCAQQABixAxiABDINCAUQABiDARixAxiABDIQCAYQABiDARixAxiABBiKBTIGCAcQRRg80gEIMjM0N2owajmoAgCwAgA&sourceid=chrome&ie=UTF-8#sie=lg;/g/11sk7gnh6c;2;/m/02_tc;tbbs;hd;;;;2024-05-11T14:00:00Z&wptab=si:ACC90nxf9KAEpHgHfAikz_8O8Y5Hh0ixj21IrePIxqwFME2hPrAtHgxFMhMJd22o6cAVUtabSJThEHz0rv3ESLFKsWwBsxNWDmoOuxSk4SPD7_CvBmGQjdGZN9oE91BCT7VqQ7p9DqITO_F9BxwuzfH72dJlId24l0P74bvWF1U8YqrR7qGeTVs%3D" target="_blank">Premier Legue</a>
+          <a href="https://www.google.com/search?gs_ssp=eJzj4tDP1Tcwii9JNmD0Yi8oSs3NTC0CADZBBew&q=premier&rlz=1C1ONGR_esCL1000CL1000&oq=premier&gs_lcrp=EgZjaHJvbWUqCggBEC4YsQMYgAQyBwgAEAAYjwIyCggBEC4YsQMYgAQyDQgCEAAYgwEYsQMYgAQyDAgDEAAYFBiHAhiABDIKCAQQABixAxiABDINCAUQABiDARixAxiABDIQCAYQABiDARixAxiABBiKBTIGCAcQRRg80gEIMjM0N2owajmoAgCwAgA&sourceid=chrome&ie=UTF-8#sie=lg;/g/11sk7gnh6c;2;/m/02_tc;tbbs;hd;;;;2024-05-11T14:00:00Z&wptab=si:ACC90nxf9KAEpHgHfAikz_8O8Y5Hh0ixj21IrePIxqwFME2hPrAtHgxFMhMJd22o6cAVUtabSJThEHz0rv3ESLFKsWwBsxNWDmoOuxSk4SPD7_CvBmGQjdGZN9oE91BCT7VqQ7p9DqITO_F9BxwuzfH72dJlId24l0P74bvWF1U8YqrR7qGeTVs%3D" target="_blank">Copa llanto eterno v3</a>
         </li>
-        <li>
-          <a href="https://www.google.com/search?q=serie+a&rlz=1C1ONGR_esCL1000CL1000&oq=serie+a&gs_lcrp=EgZjaHJvbWUqDQgAEAAY4wIYsQMYgAQyDQgAEAAY4wIYsQMYgAQyCggBEC4YsQMYgAQyDQgCEC4YgwEYsQMYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgxMjUxajBqOagCALACAA&sourceid=chrome&ie=UTF-8#sie=lg;/g/11kbz3nwd5;2;/m/03zv9;tbbs;hd;;;;2024-05-17T18:45:00Z&wptab=si:ACC90nxf9KAEpHgHfAikz_8O8Y5Hh0ixj21IrePIxqwFME2hPrAtHgxFMhMJd22o6cAVUtabSJThEHz0rv3ESLFKsWwBr3PZ-cSRiPA0i7-U14Y_dZStrEMfNO1hwf1f5hSaJ_ztHxyB8JHu9wwfad4gw9TE-c01BWxKRqVSA48v2NZR3icCTC0%3D" target="_blank">Serie A</a>
-        </li>
-        <li>
-          <a href="mundial">Mundial</a>
-        </li>
-        <li>
-          <a href="https://www.google.com/search?q=copoa+america&sca_esv=361416631b2a74db&sca_upv=1&rlz=1C1ONGR_esCL1000CL1000&sxsrf=ADLYWII4cAknIxZX65G3RnrONEUj53cBbw%3A1717163398855&ei=htVZZvr0M7_-5OUPoZWQ4A4&ved=0ahUKEwj6z6OThLiGAxU_P7kGHaEKBOwQ4dUDCBA&uact=5&oq=copoa+america&gs_lp=Egxnd3Mtd2l6LXNlcnAiDWNvcG9hIGFtZXJpY2EyEBAAGIAEGLEDGEMYgwEYigUyEBAuGIAEGLEDGEMYgwEYigUyEBAuGIAEGLEDGEMYgwEYigUyEBAAGIAEGLEDGEMYgwEYigUyEBAAGIAEGLEDGEMYgwEYigUyDRAAGIAEGLEDGEMYigUyChAAGIAEGEMYigUyDRAAGIAEGLEDGIMBGAoyChAAGIAEGLEDGAoyEBAAGIAEGLEDGEMYgwEYigVI5RtQAFjyGXACeAGQAQCYAVqgAcQIqgECMTW4AQPIAQD4AQGYAhGgAu4JwgIKECMYgAQYJxiKBcICChAuGIAEGEMYigXCAgQQIxgnwgIQEC4YgAQY0QMYQxjHARiKBcICCxAAGIAEGLEDGIMBwgIFEAAYgATCAgoQLhiABBjUAhgKwgIFEC4YgATCAh8QLhiABBjRAxhDGMcBGIoFGJcFGNwEGN4EGOAE2AEBwgINEC4YgAQYsQMYgwEYCsICBxAAGIAEGArCAgcQLhiABBgKwgIZEC4YgAQYQxiKBRiXBRjcBBjeBBjfBNgBAcICChAuGIAEGLEDGArCAg0QLhiABBixAxiDARgNwgINEAAYgAQYsQMYgwEYDcICChAAGIAEGLEDGA3CAgcQABiABBgNwgIcEC4YgAQYsQMYgwEYDRiXBRjcBBjeBBjgBNgBAZgDALoGBggBEAEYFJIHAjE3oAeG3QE&sclient=gws-wiz-serp#sie=lg;/m/0xn9y9g;2;/m/01l5y1;tbbs;hd;;;;2024-06-21T00:00:00Z&wptab=si:ACC90nw9vMMdwL91whQ4n-NcljM143f3JvZl4TM_hvFSavH6DxhM68nwhpUpFrgEtIyxVqexrdwH9mpql3VkflsXToKZQqrOlYIn4h7RlVP5cPwyOy53NaTHpp6fCzaGadckLrViUC8x6FICvrevU_bcxlHhDQjrv-N_pwITRe9DSlFyDKFfCyo%3D" target="_blank">Copa America</a>
-        </li>
-        <li>
-          <a href="https://www.google.com/search?q=euro+copa&rlz=1C1ONGR_esCL1000CL1000&oq=euro+copa&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIPCAEQLhgKGIMBGLEDGIAEMgkIAhAAGAoYgAQyCQgDEAAYChiABDIJCAQQABgKGIAEMgkIBRAAGAoYgAQyCQgGEAAYChiABDIJCAcQABgKGIAEMgkICBAAGAoYgATSAQgzMTQ1ajBqOagCALACAA&sourceid=chrome&ie=UTF-8#sie=lg;/m/0ynsg3h;2;/m/01l10v;tbbs;hd;;;;2024-06-14T19:00:00Z&wptab=si:ACC90nw9vMMdwL91whQ4n-NcljM143f3JvZl4TM_hvFSavH6DxhM68nwhpUpFrgEtIyxVqexrdwH9mpql3VkflsXToKZi3NVQOSROZjc9eE-ZyLTBn7DXdDEzCEKuyWj2SxF1teCMDitTH3i2EeYhdnwmJTGuVoZVBCEKuGaMS4RfSAPVT8TqlY%3D" target="_blank">Euro Copa</a>
-        </li>
+        <!--<li> por 
+          <a href="https://www.google.com/search?q=serie+a&rlz=1C1ONGR_esCL1000CL1000&oq=serie+a&gs_lcrp=EgZjaHJvbWUqDQgAEAAY4wIYsQMYgAQyDQgAEAAY4wIYsQMYgAQyCggBEC4YsQMYgAQyDQgCEC4YgwEYsQMYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgxMjUxajBqOagCALACAA&sourceid=chrome&ie=UTF-8#sie=lg;/g/11kbz3nwd5;2;/m/03zv9;tbbs;hd;;;;2024-05-17T18:45:00Z&wptab=si:ACC90nxf9KAEpHgHfAikz_8O8Y5Hh0ixj21IrePIxqwFME2hPrAtHgxFMhMJd22o6cAVUtabSJThEHz0rv3ESLFKsWwBr3PZ-cSRiPA0i7-U14Y_dZStrEMfNO1hwf1f5hSaJ_ztHxyB8JHu9wwfad4gw9TE-c01BWxKRqVSA48v2NZR3icCTC0%3D" target="_blank">Segunda division.</a>
+        </li> -->
       </ul>
 
-      <!-- Right Nav -->
-      <ul class="nav-menu-right">
+      <!-- no le veo uso a la funcion buscar en el navbar -->
+      <!--<ul class="nav-menu-right">
         <li>
           <a href="//www.google.com/search" target = "_blank">
             <i class="fas fa-search text-pretty text-white text-md">buscar</i>
           </a>
         </li>
-      </ul>
+      </ul>-->
     </nav>
     <hr>
 
@@ -76,13 +67,13 @@
     <header class="showcase text-pretty text-white text-2xl">
       <h2>Bienvenidos al Draft Historicoooooo!</h2>
       <p>Enterese de la noticia actuales del draft!</p>
-      <a href="#" class="btn  bg-blue-600 border-none rounded-lg">
+      <a href="#" class="btn border-none rounded-lg">
         SignUp <i class="fas fa-chevron-right"></i>
       </a>
     </header>
 
     <!-- NEWS CARDS -->
-    <div class="news-cards bg-blue-700 p-3 rounded-lg">
+    <div class="news-cards bg-gray-700 p-3 rounded-lg">
       <div>
         <!-- Indicamos a Django que la ruta de la imagen esta en static files -->
         <!-- {% static 'ruta_de_la_imagen' %} -->
@@ -121,12 +112,11 @@
 
     <!-- Card Banner 1-->
     <section class="cards-banner-one">
-      <div class="content">
-        <h2>Lorem, ipsum dolor.</h2>
+      <div class="content w-full max-w-2xl">
+        <h2>Euro Copa 2024</h2>
         <!-- lorem 20 -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat maxime facilis quasi alias illo, fugiat
-          cupiditate porro dolores tenetur delectus!</p>
-        <a href="#" class="btn">Learn More<i class="fas fa-chevron-right"></i></a>
+        <p>La Eurocopa de fútbol 2024 o Euro 2024 es la decimoséptima edición del torneo europeo de selecciones nacionales. Organizada por la UEFA, se celebra en Alemania desde el 14 de junio al 14 de julio. </p>
+        <a href="https://www.google.com/search?client=firefox-b-d&sca_esv=d37a15596c35d05b&sca_upv=1&sxsrf=ADLYWIL9gJzGN_RCueexY8H0n2qWnn5Tdw:1720450020551&q=eurocopa+2024&source=lnms&fbs=AEQNm0CbCVgAZ5mWEJDg6aoPVcBgWizR0-0aFOH11Sb5tlNhdzvguW7TJ8ZJj4v-NOGupFjybypXATN8-ElM0wR8g3she7sIB7KqBzukgWF5YXPEyVEF5x5uZSlnJOsVBtW3rTigpPiQwnz_pBf5VjMpKR-bcyNNCOlgiJ6iX2aTL7GSgEQylWuUetxP0zaEa9e8C_QaKbwL&sa=X&ved=2ahUKEwiIqtDi15eHAxUPRzABHaFkCJ8Q0pQJegQIERAB&biw=896&bih=954&dpr=1" class="btn rounded-lg">Euro Copa 2024<i class="fas fa-chevron-right rounded-xl"></i></a>
       </div>
     </section>
 
@@ -162,19 +152,19 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
           doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
         </p>
-        <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+        <a href="https://www.google.com/search?q=eurocopa&client=firefox-b-d&sca_esv=d37a15596c35d05b&sca_upv=1&sxsrf=ADLYWILCkqodNGZlF-bfWM7Vviqs2Jwb3w%3A1720448829354&ei=PfeLZumnFYqRwbkPoqKMoAU&ved=0ahUKEwipus-q05eHAxWKSDABHSIRA1QQ4dUDCA8&uact=5&oq=eurocopa&gs_lp=Egxnd3Mtd2l6LXNlcnAiCGV1cm9jb3BhMg8QIxiABBgnGIoFGEYY_QEyEBAuGIAEGLEDGEMYgwEYigUyEBAAGIAEGLEDGEMYgwEYigUyEBAAGIAEGLEDGEMYgwEYigUyDRAAGIAEGLEDGEMYigUyEBAAGIAEGLEDGEMYgwEYigUyCxAAGIAEGLEDGIMBMgsQABiABBixAxiDATILEAAYgAQYsQMYgwEyCxAAGIAEGLEDGIMBMhkQABiABBiKBRhGGP0BGJcFGIwFGN0E2AECSPQSUPcDWPYRcAF4AZABAJgBeKAB6weqAQM3LjO4AQPIAQD4AQGYAgugArkIwgIKECMYgAQYJxiKBcICBRAAGIAEwgIKEAAYgAQYQxiKBcICDRAuGIAEGLEDGEMYigXCAh8QLhiABBixAxhDGIMBGIoFGJcFGNwEGN4EGOAE2AEBwgIIEC4YgAQYsQPCAgQQIxgnwgIKEC4YgAQYQxiKBcICCBAAGIAEGLEDmAMAugYGCAEQARgUugYGCAIQARgTkgcDNC43oAeUfA&sclient=gws-wiz-serp#wptab=si:ACC90nwbHRL60zMaZUQH4IW2M0W06pbU38KZ0w0-1N0sIy6eiRqE8KYB1kVo9nbSeNHdAqvanH4p3Tc3HcYp65amEGOlw9-0fNUQLQKUmajgzYzlxOBrJo5PXTlr_WwXfc93Ud8mmynHxB-wIQBK5YZsq2grIMfqb0oQRPmfs3-4ukr_OAQnphg%3D">Euro copa<i class="fas fa-angle-double-right"></i></a>
       </div>
     </div>
 
-    <!-- third card -->
-    <section class="cards-banner-two w-full bg-black">
+    <!-- Esto debe de ir con full width que cubra 100% del area  -->
+    <section class="cards-banner-two w-full md:container md:mx-auto">
       <div class="content">
-        <h2>Lorem, ipsum dolor.</h2>
+        <h2 class="text-white text-pretty text-wrap text-2xl ">Copa America</h2>
         <!-- lorem 30 -->
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut qui laudantium id quam magni accusantium,
-          veritatis, ipsam labore, reprehenderit dolore repudiandae nemo sint deserunt! Suscipit facilis qui inventore
-          consequatur fugit.</p>
-        <a href="#" class="btn">Learn More <i class="fas fa-chevron-right"></i></a>
+        <p class="text-white text-pretty text-wrap text-xl">La Copa América 2024 es la cuadragésima octava edición de este torneo, 
+          la principal competencia futbolística entre las selecciones nacionales de América del Sur y la más antigua del mundo. 
+          Por segunda vez, el torneo se realiza en Estados Unidos, después de la edición centenario de 2016. </p>
+        <a href="https://www.google.com/search?client=firefox-b-d&q=copa+america#wptab=si:ACC90nwbHRL60zMaZUQH4IW2M0W06pbU38KZ0w0-1N0sIy6eiRqE8KYB1kVo9nbSeNHdAqvanH4p3Tc3HcYp65amEGOllV1jIcVWBJctuXvRrknHPagqK5tddEJkUj-t0b70RFNkQljWjwDVXpGANzHW4o8pWBS-MxRCtoqqo_yyfJ0z5IJhpwSQMuYaWMmZseW53FlRPEIE" class="btn rounded-lg">Copa america<i class="fas fa-chevron-right"></i></a>
       </div>
     </section>
 
@@ -182,8 +172,8 @@
   </div>
 
   <!-- Footer Links -->
-  <div class="footer-links bg-black">
-    <div class="footer-container bg-black">
+  <div class="footer-links ">
+    <div class="footer-container">
       <ul>
         <li>
           <a href="#">
@@ -293,8 +283,8 @@
   </div>
 
   <!-- Footer -->
-  <footer class="footer bg-black">
-    <a href="#" target="_blank" >Gracias Jesus</a>
+  <footer class="footer">
+    <a href="#" target="_blank" > Developed by Luis garcia & Jesus  </a>
     
   </footer>
 
