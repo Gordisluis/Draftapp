@@ -28,5 +28,7 @@ deben de pasar a la rama con git de vscode que es mas facil. cualquier duda me a
 
 npx tailwindcss -i ./static/src/input.css -o ./static/src/output.css --watch --minify
 
+1.2 los cambios se realizan dentro del archivo input.css asi son compilados a outputcss y reflejados en la pagina.
+
 
 
